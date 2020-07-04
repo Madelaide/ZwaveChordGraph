@@ -1,14 +1,22 @@
-<!-- Chord diagram Developed  by Madelaide 202006
-Inspired from the Domoticz DependencyChart, whicH I always preferred for visualising my ZWave network.
+<!-- Chord graph Developed  by Madelaide 202006
+Inspired from the Domoticz DependencyChart, which I always preferred for visualising my ZWave network.
 Much hacking of code as this is my first JS/HTML and HA project. I still don't really understand the hooks into HA, but the code below works (for me :) )
+
+Very much a work in progress, superfluous code remains (borrowed from the sources below) and also debug logging left in.
+
+I'm advised by the Home Assistant forum this method of hooking into HA is deprecated, so i need to  get teh "card method" working, so far no luck.
+
 Lots of code borrowed from the following:-
 https://www.d3-graph-gallery.com/chord.html
 
 Nadieh Bremer’s Block 94db779237655907b907/Updated June 15, 2020/Storytelling with Chord Diagram to get the node/group labelling and highlighting working
 (http://bl.ocks.org/nbremer/94db779237655907b907) 
 
-Adam Naj's zwavegraph2.html panel and code for how to add to HA and for the code to parse the Zwave list (I have not yeet tested if this works with OpenZwave, that will be the next stage)
+Adam Naj's zwavegraph2.html panel and code for how to add to HA and for the code to parse the Zwave list (I have not yeet tested if this works with OpenZwave, that will be the next stage, after getting it to work as "card")
 https://gist.github.com/AdamNaj
+
+Version 0.9 2020-07-04 Initial github committal, beta really but works for me and has been useful.
+
 -->
 <dom-module id="ha-panel-zwavechords">
   <template>
