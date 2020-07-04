@@ -15,6 +15,18 @@ Nadieh Bremer’s Block 94db779237655907b907/Updated June 15, 2020/Storytelling 
 Adam Naj's zwavegraph2.html panel and code for how to add to HA and for the code to parse the Zwave list (I have not yeet tested if this works with OpenZwave, that will be the next stage, after getting it to work as "card")
 https://gist.github.com/AdamNaj
 
+INSTRUCTIONS:
+     1) add this text to your configuration.yaml file
+
+panel_custom:
+  - name: zwavechords
+    sidebar_title: ZWC
+    sidebar_icon: mdi:access-point
+    url_path: zwavec
+
+    2) Create a folder in your config folder named panels (like config/panels)
+    3) Create a file in the panels folder with this content (zwavechords.html)
+    4) refresh your cache, and or restart ha
 Version 0.9 2020-07-04 Initial github committal, beta really but works for me and has been useful.
 
 -->
